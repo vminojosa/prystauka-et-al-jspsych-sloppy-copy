@@ -49,7 +49,10 @@
                     <td><img src='img/orange.png'></img></td>
                 </tr>
             </table>`,
-        tiral_duration: 2000
+        trial_duration: 2000,
+        extensions: [
+            {type: jsPsychExtensionWebgazer}
+        ]
     };
 
     timeline.push(preload, welcome, test);
