@@ -16,7 +16,10 @@
         override_safe_mode: true,
         on_finish: function() {
             jsPsych.data.displayData();
-        }
+        },
+        extensions: [
+            {type: jsPsychExtensionWebgazer}
+        ]
     });
 
     var timeline = [];
