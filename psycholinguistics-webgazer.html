@@ -41,17 +41,17 @@
         prompt: `
             <table>
                 <tr>
-                    <td><img src='img/orange.png'></img></td>
-                    <td><img src='img/blue.png'></img></td>
+                    <td id="top-left"><img src='img/orange.png'></img></td>
+                    <td id="top-right"><img src='img/blue.png'></img></td>
                 </tr>
                 <tr>
-                    <td><img src='img/blue.png'></img></td>
-                    <td><img src='img/orange.png'></img></td>
+                    <td id="low-left"><img src='img/blue.png'></img></td>
+                    <td id="low-right"><img src='img/orange.png'></img></td>
                 </tr>
             </table>`,
         trial_duration: 2000,
         extensions: [
-            {type: jsPsychExtensionWebgazer}
+            {type: jsPsychExtensionWebgazer, params: {['#top-right'], ['#top-left'], ['#low-left'], ['#low-right']}}
         ]
     };
 
